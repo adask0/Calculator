@@ -24,7 +24,7 @@ const silnia = document.querySelector('.silnia');
 const nroot = document.querySelector('.n-root');
 const log = document.querySelector('.log');
 const root = document.querySelector('.root');
-const brackets = document.querySelector('.bracket');
+const form = document.querySelector('.form');
 let jd = 0
 
 document.onselectstart = function(){return false}
@@ -104,7 +104,7 @@ const addOne = () => {
       type.textContent += '.';
     }
   });
-  brackets.addEventListener('click', () => {
+  form.addEventListener('click', () => {
     if(type.textContent.charAt(0) !== '-' && type.textContent !== ''){
       type.textContent = '-' + type.textContent
     } else{
