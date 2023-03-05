@@ -190,8 +190,8 @@ const addOne = () => {
     let count = 1;
     for (let i = 1; i < parseFloat(type.textContent) + 1; i++) {
       count *= i;
-      type.textContent = count;
     }
+      type.textContent = count;
     } else if(type.textContent === '0') {
       type.textContent = 0;
     }
